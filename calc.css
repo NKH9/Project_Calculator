@@ -1,0 +1,58 @@
+/* *, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+} */
+header {
+    font-family: 'Gill Sans';   
+    font-size: 120px;  
+    color: rgb(82, 255, 1); 
+    text-transform: uppercase;
+    outline: 100px #060707;
+    text-align: center;}
+body { 
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to left, #2b05b6, #ee0606)}
+.Calculator1 {
+    display: grid; 
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows:  repeat(6, 100px);
+    align-content: center;
+    justify-content: center;
+    min-height: 30vh;}
+.Calculator1 > button { 
+    cursor: pointer; 
+    font-size:  35px; 
+    border: 3px solid blue;   
+    background-color: rgba(238, 255, 0, 0.774);  }
+.Calculator1 > button:hover {
+    background-color: paleturquoise;
+}
+.output {
+    background-color:rgba(238, 255, 0, 0.5); 
+    border:3px solid blue; ;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 8px;
+    word-wrap: break-word;
+    word-break: break-all;
+    
+}
+.span-two {
+    grid-column: span 2;
+}
+#model {
+    font-size: 25px;
+}
+.output .previous { 
+    color: rgb(17, 0, 255); 
+    font-size: 20px;
+}
+.output .current { 
+    color: rgb(17, 0, 255); 
+    font-size: 30px;
+}
