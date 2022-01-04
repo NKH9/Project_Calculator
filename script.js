@@ -93,5 +93,5 @@ curValue.textContent = stack.pop();
 )
 
 Model.addEventListener('click', () => {
-    alert ("Molel No - X2022")
+    alert ("Model No - X2022")
 })
